@@ -44,6 +44,7 @@
     var productapp = new Vue({
         el:'#cartapp',
         delimiters: ['[[',']]'],
+        store: store,
         data(){
            return {
                products: [{{ productsstring|safe }}]
